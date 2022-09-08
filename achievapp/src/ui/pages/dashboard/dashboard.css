@@ -13,16 +13,22 @@ a {
     font-family: var(--font-family);
 }
 
-.logo-dashboard {
+.logo-dashboard{
     margin: 20px auto;
+    display: flex;
+    justify-content: center;
 }
 
 .aside {
     background: var(--main-color);
-    width: 20%;
+    width: 370px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding-top: 20px;
+}
+
+.aside > * {
+    margin: 0 20px;
 }
 
 .profile {
@@ -62,17 +68,25 @@ a {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+    max-height: 440px;
+    overflow-y: scroll;
 }
 
 .grey-box .active {
     color: white;
 }
 
-.grey-box .active span {
-    background: white;
+.grey-box > li  span {
+    background: var(--grey-color);
     color: var(--main-color);
     padding: 5px;
     border-radius: 5px;
+    margin-right: 10px;
+}
+
+.grey-box .active span {
+    background: white;
+    color: var(--main-color);
 }
 
 .grey-box > h3 {
@@ -86,7 +100,7 @@ a {
 }
 
 .grey-box .profile {
-    font-size: 14px;
+    font-size: 12px;
     margin: 10px 0;
     width: 100%;
     font-family: var(--font-family);
@@ -94,4 +108,164 @@ a {
 
 .App {
     height: auto;
+    background-color: #fdfdfd;
+}
+
+main {
+    width: calc(100% - 370px);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.navigation .searchbox {
+    position: relative;
+    border: 2px solid var(--grey-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.navigation .searchbox input {
+    padding: 10px 30px 10px 10px;
+    width: 100%;
+    min-width: 400px;
+    outline: none;
+    font-size: 16px;
+    border: none;
+}
+
+.navigation .searchbox .icon-search {
+    position: absolute;
+    right: 11px;
+    top: 13px;
+    z-index: 100;
+    color: #555;
+}
+
+.btn {
+    appearance: none;
+    padding: 1em 2em;
+    outline: none;
+    border-radius: .6em;
+    border: none;
+}
+
+.btn-light {
+    background-color: var(--light-color);
+    color: var(--main-color);
+}
+
+.btn-primary {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.navigation .actions .btn {
+    font-size: 14px;
+}
+
+.navigation .actions .btn:not(:last-child) {
+    margin-right: 10px;
+}
+
+section {
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.stories,
+.events {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+.events .event {
+    background-color: #bca2b8;
+}
+.stories .story,
+.events .event {
+    min-width: 400px;
+    font-family: var(--font-family);
+    border-radius: 10px;
+}
+.events .event h3, .events .event > span{
+    color: var(--main-color);
+}
+
+.events .event>span {
+    font-size: 11px;
+}
+
+.stories .story>p,
+.events .event>p {
+    font-weight: normal;
+    margin: 10px 0;
+}
+.events .event button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.grey-box::-webkit-scrollbar,
+.stories::-webkit-scrollbar,
+.events::-webkit-scrollbar {
+    display: none;
+}
+
+.stories .story {
+    border: 2px solid var(--grey-color);
+    border-radius: 10px;
+}
+
+.stories .story > div {
+    justify-content: space-between;
+}
+
+.stories .story div {
+    display:  flex;
+    align-items: center;
+}
+
+.stories .story img {
+    width: 2em;
+    height: 2em;
+    margin-right: .4em;
+}
+
+.stories .story a {
+    color: blue;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+.stories .story>p {
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.stories .story .actions {
+    gap: 10px
+}
+
+#events {
+    min-height: 293px;
+}
+
+#stories {
+    min-height: 275px;
+}
+
+footer {
+    margin: 0 !important;
+    margin-top: 20px !important;
+    padding: 30px 0;
+    background-color: #fefefe;
+    text-align: center;
 }
