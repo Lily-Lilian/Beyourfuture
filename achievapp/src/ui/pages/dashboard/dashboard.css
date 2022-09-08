@@ -1,0 +1,97 @@
+:root {
+    --main-color: #781C68;
+    --light-color: #96588bce;
+    --grey-color: #c0c0c0;
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-family: var(--font-family);
+}
+
+.logo-dashboard {
+    margin: 20px auto;
+}
+
+.aside {
+    background: var(--main-color);
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.profile {
+    display: flex;
+    gap: 1em;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.profile__image {
+    border-radius: .4em;
+    border: 1px solid white;
+    height: 4em;
+    width: 4em;
+}
+
+.profile__text {
+    flex: 1;
+    color: white;
+}
+
+.profile__text span {
+    color: var(--grey-color);
+}
+
+.profile__action {
+    background: var(--grey-color);
+    color: var(--main-color);
+    padding: .4em;
+    border-radius: .4em;
+}
+
+.grey-box {
+    background: var(--light-color);
+    color: var(--grey-color);
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grey-box .active {
+    color: white;
+}
+
+.grey-box .active span {
+    background: white;
+    color: var(--main-color);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.grey-box > h3 {
+    color: white;
+    padding: 10px;
+}
+
+.grey-box ul li {
+    padding: 0 10px;
+    width: 100%;
+}
+
+.grey-box .profile {
+    font-size: 14px;
+    margin: 10px 0;
+    width: 100%;
+    font-family: var(--font-family);
+}
+
+.App {
+    height: auto;
+}

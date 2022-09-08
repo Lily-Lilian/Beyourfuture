@@ -1,0 +1,110 @@
+#leftSide{
+    height: 100%;
+    width: 100%;
+    background-color: var(--primaryColor);
+    overflow: hidden;
+}
+#left_side_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    height: 25%;
+    padding: 0 20px;
+    /* background-color: azure; */
+    border-bottom: 1px solid rgb(196, 203, 204);
+    box-shadow: 0px 4px 3px rgb(191, 197, 195);
+}
+#left_side_header div{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    /* background-color: rgb(210, 210, 218); */
+    /* height: 40px; */
+}
+#left_side_header #logo{
+    display: block;
+    padding: 10px 20px;
+    width: 40px;
+    height: 100px;
+    padding: 10px;
+    /* background-color: aqua; */
+    margin-left: -50%;
+    overflow: hidden;
+    text-align: center;
+    
+}
+#left_side_header #logo img{
+    width: 100px;
+    height: 100px;
+    margin-left: -45px;
+    object-fit: contain;
+    /* background-color: blue; */
+}
+
+#left_side_header div span{
+    /* background-color: brown; */
+    /* margin-left: 10px; */
+    color: rgb(195, 97, 219);
+    /* background-color: cadetblue; */
+}
+/* #left_side_header h3{
+    
+} */
+#left_side_menu{
+    /* padding: 0 20px; */
+}
+#left_side_menu li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 30px;
+    /* margin: 10%; */
+    font-size: 15px;
+    font-family: 'Times New Roman', cursive;
+    opacity: 0.6;
+    margin: 1.4rem 0;
+    width: 100%;
+    padding-left: 20px;
+    /* padding: 3px; */
+    /* background-color: rgb(176, 206, 191); */
+}
+#left_side_menu li:hover{
+    position: relative;
+    box-shadow: 0px 4px 3px rgb(191, 197, 195);
+    /* width: 200px; */
+    color: var(--purple);
+    /* margin-left:10px ; */
+}
+#left_side_menu li:active{
+    color: var(--purple);
+}
+.navLinks{
+    display: inline-block;
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    
+}
+.navLinks:hover{
+    color: rgb(11, 86, 184);
+    
+}
+.navLinks:active{
+    color: rgb(1, 0, 2);
+}
+.navIcons:hover{
+    color: rgb(226, 208, 43);
+    
+    /* background-color: aqua; */
+}
+@media screen and (max-width:900px) {
+    #left_side_header #logo{
+        padding: 10px;
+        margin-left: 2px;
+        
+    }
+
+}

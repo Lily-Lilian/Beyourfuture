@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+
+#maincardContent{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 400px;
+    background-color: var(--bgColor);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 3px 10px 10px rgb(187, 194, 193);
+}
+
+#maincardHeader{
+    display: flex;
+    /* margin-bottom: 10px ; */
+    /* padding: 10px; */
+}
+
+#maincardHeader img{
+    width: 40px;
+    height: 40px;
+    object-fit: fill;
+    border-radius: 20%;
+}
+#maincardHeader header{
+    margin-left: 10px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    opacity: 0.8;
+}
+/* #maincardHeader header h1{
+
+} */
+#maincardHeader header h5{
+    opacity: 0.5;
+}
+
+#maincardHeader #maincardIcon{
+    margin-left: auto;
+    float: right;
+    
+}
+#maincardPost{
+    margin-top: 10px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+}
+#maincardLike{
+    display: flex;
+    margin: 10px 0 10px 20px;
+    opacity: .7;
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+}
+#maincardLike span{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+#maincardUserComment{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+#maincardUserComment img{
+    width: 35px;
+    height: 35px;
+    object-fit: fill;
+    border-radius: 50%;
+}
+#maincardUserComment input{
+    width: 200px;
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    width: 80%;
+    outline: none;
+    border: none;
+}
+#maincardComment{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 10px;
+}
+#maincardComment img{
+    width: 35px;
+    height: 35px;
+    object-fit: fill;
+    border-radius: 50%;
+}
+#maincardComment div{
+    margin-left: 10px;
+}
+
+#maincardLoadComment{
+    /* jus: flex-end; */
+    display: flex;
+    justify-content: start;
+    margin-top: auto;
+    width: 100%;
+    margin-left: 10px;
+}
+#maincardLoadComment button{
+    /* width: 90%; */
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--bgColor);
+    color: purple;
+    border: none;
+    
+}

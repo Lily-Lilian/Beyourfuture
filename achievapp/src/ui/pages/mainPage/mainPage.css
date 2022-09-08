@@ -1,0 +1,77 @@
+#mainpageContent{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(185, 189, 189);
+    margin: 5px;
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+
+#mainpageLeftside{
+    width: 20%;
+    background-color: cadetblue;
+}
+@media screen and (max-width:900px) {
+    #mainpageLeftside{
+        width: 40%;
+    }
+    #mainpageRightside{
+        width: 0%;
+        visibility: hidden;
+    }
+    #mainpageMainside {
+        width: 100%;
+        background-color: aqua;
+    }
+}
+#mainpageMainside #header{
+    width: 100%;
+    /* background-color: aqua; */
+    margin: auto;
+}
+#mainpageMainside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: right; */
+    
+    width: 55%;
+    margin: 0px 5px;
+    border-radius: 10px;
+    /* background-color: var(--primaryColor); */
+    background-color: rgb(223, 230, 231);
+}
+#mainpageMainside #content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    margin: auto;
+}
+#mainpageRightside{
+    width: 25%;
+    background-color: var(--bgColor);
+    border-radius: 10px;
+}
+
+#mainpageMainside #content:hover{
+    overflow: scroll;
+}
+#mainpageMainside #content::-webkit-scrollbar-track
+{
+-webkit-box-shadow: inset 0 0 6px rgba(119, 85, 85, 0.3);
+background-color: rgb(245, 248, 248);
+height: 0px;
+}
+#mainpageMainside #content::-webkit-scrollbar
+{
+    margin-top: 10px;
+    width: 0px;
+    height: 10px;
+    background-color: #e6cccc;
+}
+#mainpageMainside #content::-webkit-scrollbar-thumb
+{
+background-color: rgba(193, 197, 204, 0.692);
+}
