@@ -24,12 +24,12 @@ function App() {
          <Router>
           
          <Routes>
-          <Route path='/' element={<SignUpPage/>} />
-          <Route path='/signin' element={<SignInPage/>} /> 
-          <Route path='signup' element={<SignUpPage/>} />
-          <Route path='/navbar' element={<MainPage />}/>
-          <Route path='/dashboard' element={<Dashboard />}/>
-          <Route path='/home'  element={<Home/>}/>
+          <Route exact path='/' element={<SignUpPage/>} />
+          <Route exact path='/signin' element={<SignInPage/>} /> 
+          <Route exact path='signup' element={<SignUpPage/>} />
+          <Route exact path='/navbar' element={<MainPage />}/>
+          <Route exact path='/dashboard' element={<Dashboard />}/>
+          <Route exact path='/home'  element={<Home/>}/>
           {/* <Route path='/navbar' element={<MainCard />}/>  */}
          </Routes> 
          </Router>

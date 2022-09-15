@@ -1,0 +1,100 @@
+.App {
+  display: block;
+}
+
+#header {
+  position: relative;
+  width: 100%;
+  background: url('../../../assets/Rectangle\ 30.png');
+  height: 500px;
+}
+
+#header::before {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  left: -5%;
+  top: -20%;
+  background: rgba(0, 0, 0, .5);
+  content: '';
+  z-index: 1;
+}
+
+.home-navbar {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
+  align-items: center;
+  z-index: 2;
+}
+
+#header > main {
+  position: absolute;
+  top: 62%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  color: white;
+  z-index: 2;
+}
+
+#header > main > button {
+  appearance: none;
+  border: 5px solid white;
+  border-radius: 50px;
+  color: white;
+  background: none;
+  font-size: 16px;
+  padding: 5px 20px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  transition: all .2s;
+}
+
+#header > main > button:hover {
+  background: white;
+  color: black;
+}
+
+#sponsors > img{
+  max-width: 100%;
+}
+
+#sponsors {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #fbeaf871;
+}
+
+.section-1 {
+  width: 100%;
+  max-width: 1300px;
+  position: relative;
+  padding: 0;
+  margin: 40px auto;
+}
+
+.section-1 .mw-2 {
+  max-width: 400px;
+  width: 100%;
+}
+
+.section-1 .mw-4 {
+  max-width: 700px;
+  width: 100%;
+}
+
+.section-1 > img {
+  height: 950px;
+  position: absolute;
+  right: 3%;
+  top: -20%;
+}
