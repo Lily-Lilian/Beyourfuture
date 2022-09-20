@@ -148,13 +148,13 @@ function Dashboard() {
   }
 
   return (
-    <>
+    <div className='dashboard-App'>
       <aside className='aside'>
         <div className="logo-dashboard"><Logo /></div>
         <div className="profile">
           <img className="profile__image" src="https://randomuser.me/api/portraits/men/33.jpg" alt="profile-picture" />
           <div className="profile__text">
-            <h3>Fred Ndagije</h3>
+            <h3 className='profile__text-heading'>Fred Ndagije</h3>
             <span>Drawing artist</span>
           </div>
           <span className="profile__action">
@@ -217,7 +217,7 @@ function Dashboard() {
           </ul>
         </section>
       </main>
-    </>
+    </div>
   )
 }
 

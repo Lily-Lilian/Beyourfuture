@@ -13,6 +13,10 @@ a {
     font-family: var(--font-family);
 }
 
+.dashboard-App {
+    display: flex;
+}
+
 .logo-dashboard{
     margin: 20px auto;
     display: flex;
