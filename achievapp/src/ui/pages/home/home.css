@@ -23,13 +23,15 @@
 .home-navbar {
   position: absolute;
   top:0;
-  left: 0;
+  right: 3%;
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0 3rem;
   align-items: center;
   z-index: 2;
+  position: sticky;
+  font-size: smaller;
 }
 
 #header > main {
@@ -85,16 +87,65 @@
 .section-1 .mw-2 {
   max-width: 400px;
   width: 100%;
+  padding-left: 80px;
+  font-size: 22px;
+  
 }
 
 .section-1 .mw-4 {
   max-width: 700px;
   width: 100%;
+  padding-left: 90px;
+  font-size: 22px;
+  padding-top: 40px;
+
+ 
+
 }
 
 .section-1 > img {
-  height: 950px;
+ height: 950px;
+ position: absolute;
+ right: 3%;
+ top: -20%;
+ overflow: hidden;
+ 
+}
+.section-2 > img {
   position: absolute;
-  right: 3%;
-  top: -20%;
+  right: 15%;
+  top: 1100px;
+  height: 600px;
+}
+footer {
+  background-color: var(--purple);
+  margin-top: 5rem;
+  padding: 2rem 0 2rem 0;
+
+  
+}
+.link-stack {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul li {
+  list-style-type: none;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.list-link ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.list-link ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer li a:hover {
+  text-decoration: underline;
 }

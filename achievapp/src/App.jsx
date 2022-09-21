@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 // import { NavSide } from './ui/components/navSide/navSide';
 // import { NavSide } from './ui/components/navSide/navSide';
-import  SignUpPage  from './ui/pages/signUpPage/signUpPage';
+import  SignUp  from './ui/components/signUp/signup';
 import  SignInPage  from './ui/pages/signInPage/signInPage';
 import { HashRouter as Router, Routes,Route} from "react-router-dom";
 import MainPage from './ui/pages/mainPage/mainpage';
@@ -24,12 +24,12 @@ function App() {
          <Router>
           
          <Routes>
-          <Route exact path='/' element={<SignUpPage/>} />
-          <Route exact path='/signin' element={<SignInPage/>} /> 
-          <Route exact path='signup' element={<SignUpPage/>} />
+          <Route exact path='/signup' element={<SignUp/>} />
+          <Route exact path='/sign' element={<SignInPage/>} /> 
+          <Route exact path='signup' element={<SignUp/>} />
           <Route exact path='/navbar' element={<MainPage />}/>
           <Route exact path='/dashboard' element={<Dashboard />}/>
-          <Route exact path='/home'  element={<Home/>}/>
+          <Route exact path='/'  element={<Home/>}/>
           {/* <Route path='/navbar' element={<MainCard />}/>  */}
          </Routes> 
          </Router>

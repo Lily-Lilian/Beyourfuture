@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import {ReactComponent as Logo} from '../../../assets/logo.svg'
 import sponsors from '../../../assets/Group130.png'
 import img1 from '../../../assets/Group 151.png'
+import img2 from '../../../assets/Group 152.png'
 import './home.css'
 
 const Home = () => {
@@ -54,6 +55,7 @@ const Home = () => {
                 <br/>
                 <br/>
                 <br/>
+
                 <div className='mw-4'>
                     <h2>Support <br/>inclusive societies</h2>
                     <br/>
@@ -62,8 +64,45 @@ const Home = () => {
                 <img src={img1} />
             </section>
             <section className="section-2">
-                
+            <img src={img2}/>
             </section>
+
+            <footer class="">
+    <section class="spaced link-stack">
+      <div class="list-link">
+        <ul>
+          <li>
+            <h3>Quick Links</h3>
+          </li>
+          <li><a href="">Home</a></li>
+          <li><a href="">About us</a></li>
+          <li><a href="">Contact Us</a></li>
+         
+        </ul>
+      </div>
+      <div class="list-link">
+        <ul>
+          <li>
+            <h3>Social medias</h3>
+          </li>
+          <li>Twitter</li>
+          <li>instragram</li>
+          <li>Copyright@2022-Team 4</li>
+          
+        </ul>
+      </div>
+    <div id="contact">
+      <div class="list-link" >
+        <ul>
+          <li>
+            <h3>Address</h3>
+          </li>
+          <li><a href="">Solvit Africa</a></li>
+        </ul>
+      </div>
+      </div>
+    </section>
+  </footer>
         </>
     )
 };
